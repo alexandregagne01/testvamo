@@ -1,5 +1,5 @@
 let config = {
-    objets3D : 'https://cegeptr.moodle.decclic.qc.ca/pluginfile.php/285147/mod_folder/content/0/objets3D/', // répertoire des fichiers objets 3D (se terminant par un '/')
+    objets3D : '../vamo/objets3D/', // répertoire des fichiers objets 3D (se terminant par un '/')
     // objets3D : 'https://www.invisu.ca/vamo/objets3D/',
     // objets3D : 'http://localhost/vamo/objets3D/',
     // objets3D : 'http://localhost/HTML/novaetc/objets3D/',
