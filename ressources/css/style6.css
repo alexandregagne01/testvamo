@@ -1,0 +1,566 @@
+/*
+----------------------------------------------------
+                 MAIN FONT & BG COLOR
+----------------------------------------------------
+*/
+
+body {
+	color: #666;
+	background: #4c4e51;
+	font-family: "Helvetica", Arial, Geneva, sans-serif;
+}
+
+
+/*
+----------------------------------------------------
+                 HEADER AREA STYLES
+----------------------------------------------------
+*/
+
+
+.topbar {
+	background: #fff url(images/style6/topbg.png) repeat-x center top;
+
+}
+
+
+/*
+----------------------------------------------------
+                    MAIN WRAPPER
+----------------------------------------------------
+*/
+
+#wrap-a {
+	border: 1px solid #717478;
+}
+
+#wrap-b {
+	border: 1px solid #717478;
+}
+
+#wrap {
+	border: 1px solid #D9D9D9;
+}
+
+#wrap-c {
+	border: 7px solid #FFF;
+}
+
+/*
+----------------------------------------------------
+            INNER CONTENT MAIN BG COLOR
+----------------------------------------------------
+*/
+
+
+#wrap, #wrap-inner {
+	background: #FFF;
+}
+
+
+/*
+----------------------------------------------------
+                 PRIMARY LINK COLORS
+----------------------------------------------------
+*/
+
+
+a {
+	color: #0066CC;
+	text-decoration: underline;
+}
+a:hover {
+	color: #679a00;
+	text-decoration: none;
+}
+
+/*
+----------------------------------------------------
+                   READ MORE LINKS
+----------------------------------------------------
+*/
+
+a.readon {
+	font: bold 12px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: underline;
+	float: right;
+}
+a.readon:hover {
+	color: #333;
+}
+
+/*
+----------------------------------------------------
+                   HEADING STYLES
+----------------------------------------------------
+*/
+
+.componentheading {
+	color: #666;
+	line-height: 1.35em;
+	font-size: 1.85em;
+	border-bottom: 1px solid #eee;
+}
+
+/* CONTENT HEADINGS */
+td.contentheading {
+	color: #0066CC;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 130%;
+	border-bottom: 1px solid #eee;
+}
+
+/* CONTENT HEADINGS (LINKED) */
+a.contentpagetitle {
+	text-decoration: none;
+}
+
+a.contentpagetitle:hover {
+	color: #666;
+}
+
+
+/* HEADINGS H1-H6 */
+
+h1 {
+	color: #06c;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+h2 {
+	color: #679a00;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+h3 {
+	color: #7c8084;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+h4 {
+	color: #f90;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+h5 {
+	color: #4c4e51;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+h6 {
+	color: #4c4e51;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+img.left {float:left;margin-right:5px;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+img.right {float:right;margin-left:5px;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+img.pad {float:none;margin:0px auto;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+
+
+
+div.module h3,div.module_menu h3,
+div.modulelight h3,div.modulemid h3 {
+	/* letter-spacing: 0px; */
+	font: normal normal 1em/.9em "Helvetica", Arial, Geneva, sans-serif;
+	/*        largeur/hauteur d'un caractère */
+}
+/* @group Menu Column Styles */
+
+ul.menu_menu li a {
+	background-color: #fff;
+	border-bottom: 1px solid #e8e8e8;
+}
+ul.menu_menu li a:hover  {
+	color: #4f4f4f;
+	background-color: #f5f5f5;
+}
+ul.menu_menu li#current.haschild a,ul.menu_menu li li a {
+	background-color: #fff;
+	border-bottom: none;
+}
+ul.menu_menu li#current.haschild ul {
+	border-bottom: 1px solid #e8e8e8;
+	margin-left: 5px;
+}
+
+/* @end */
+
+
+/* CODE  */
+pre {
+	background: #F6F6F6;
+	border: 1px dashed #999999;
+	color: #000;
+	display: block;
+	font: 11px "Courier New", Courier, monospace;
+	padding: 5px;
+	white-space: normal;
+}
+
+
+
+/*
+----------------------------------------------------
+                      PATHWAY
+----------------------------------------------------
+*/
+
+.path {
+	background-color: #F5F5F5;
+	border: 1px solid #D9D9D9;
+	margin: 8px;
+	padding: 8px;
+	font-size: 1.13333em;
+}
+
+/* PATHWAY TRAIL COLOR  */
+span.pathway {
+	color: #333;
+        display: flex;
+        justify-content: left;
+}
+
+span.pathway.guide {
+    object-position: right;
+}
+span.pathway.guide a {
+    background-color: #ffdd99;
+}
+
+/* PATHWAY LINK COLOR  */
+span.pathway a,
+span.pathway a:hover {
+}
+
+
+/*
+----------------------------------------------------
+                    USER3 BG COLOR
+----------------------------------------------------
+*/
+
+/* REQUIRES "-gradient" CLASS SUFFIX */
+#headerleader .module-gradient {
+	background-color: #f90;
+}
+
+
+
+/*
+----------------------------------------------------
+              GLOBAL MODULE FONT SIZES
+----------------------------------------------------
+*/
+
+#sidebar,#sidebar-2,
+.user4,.user4split2,
+.user5,.user5split2,
+.user6,.user6split2,
+.user7,.user7split2 {
+	font-size: 1em;
+}
+
+/*
+----------------------------------------------------
+                 "light" MODULE SUFFIX
+----------------------------------------------------
+*/
+
+
+/* "light" TEXT COLOR */
+div.modulelight {
+	color: #333;
+}
+
+/* "light" LINK COLOR */
+div.modulelight a,div.modulelight a:hover,
+div.modulelight a.latestnewslight,div.modulelight a.latestnewslight:hover,
+div.modulelight a.mostreadlight,div.modulelight a.mostreadlight:hover
+ {
+	color: #0066CC;
+}
+
+/* "light" MODULE HEADING COLOR */
+div.modulelight h3 {
+	color: #fff;
+/* Change Font Size in Typography */
+}
+
+
+
+
+/*
+----------------------------------------------------
+                 "mid" MODULE SUFFIX
+----------------------------------------------------
+*/
+
+
+/* "mid" TEXT COLOR */
+div.modulemid {
+	color: #333;
+}
+/* "mid" LINK COLOR */
+div.modulemid a,div.modulemid a:hover,
+div.modulemid a.latestnewsmid,div.modulemid a.latestnewsmid:hover,
+div.modulemid a.mostreadmid,div.modulemid a.mostreadmid:hover {
+	color: #0066CC;
+}
+/* "mid" MODULE HEADING COLOR */
+div.modulemid h3 {
+	color: #fff;
+/* Change Font Size in Typography */
+}
+
+
+/*
+----------------------------------------------------
+           "bdr" MODULE SUFFIX (default)
+----------------------------------------------------
+*/
+
+/* "bdr" TEXT COLOR */
+div.module,div.modulebdr {
+	color: #333;
+}
+
+
+/* "bdr" LINK COLOR */
+div.module a,div.modulebdr a,
+div.module a:hover,div.modulebdr a:hover,
+div.module a.latestnews,div.modulebdr a.latestnewsbdr,
+div.module a.latestnews:hover,div.modulebdr a.latestnewsbdr:hover,
+div.module a.mostread,div.modulebdr a.mostreadbdr,
+div.module a.mostread:hover,div.modulebdr a.mostreadbdr:hover {
+	color: #0066CC;
+}
+
+
+/* "bdr" MODULE HEADING COLOR */
+div.module h3, div.modulebdr h3 {
+	color: #0066CC;
+/* Change Font Size in Typography */
+}
+
+/*
+----------------------------------------------------
+                        FOOTER
+----------------------------------------------------
+*/
+
+/*TEXT*/
+#footer p, #footer a {
+	font: 8px Arial, Helvetica, sans-serif;
+	color: #000;
+	line-height: 43px;
+}
+
+/*LINKS*/
+#footer a, #footer #mainlevel li a {
+        font: 11px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+#footer a:hover,
+#footer #mainlevel li a:hover,
+#footer #mainlevel li a#active_menu {
+	color: #000;
+        text-decoration: underline;
+
+}
+
+
+/*
+----------------------------------------------------
+                    JOOMLA! STYLES
+----------------------------------------------------
+*/
+
+.createdate,.modifydate,.small {
+	color: #7c7c7c;
+	font-size: .89em;
+}
+
+
+/*Header for table content*/
+
+td.sectiontableheader {
+	color: #FFF;
+	background: #222;
+	text-align: center;
+	border-right: 1px solid #666;
+}
+/*Alternating table rows*/
+
+tr.sectiontableentry1 td,td.sectiontableentry1 {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+tr.sectiontableentry2 td ,td.sectiontableentry2 {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+
+}
+
+/* Article Overflow */
+
+
+div.blog_more ul li a {
+	border-bottom: 1px solid #eee;
+}
+
+div.blog_more ul li a:hover {
+	background-color: #f4f4f4;
+}
+
+/* Article TOC Table */
+
+table.contenttoc {
+	color: #330;
+	border: 1px solid #d6d6d6;
+}
+table.contenttoc th {
+	background-color: #ececec;
+	color: #4f4f4f;
+}
+
+div.mosimage_caption {
+	font-size: 0.9em;
+	color: #666;
+}
+
+.pagenav {
+	font-size: 1em;
+	color: #666;
+}
+
+
+/* @group NAVBAR */
+/*
+----------------------------------------------------
+               SUCKERFISH MENU COLORS
+----------------------------------------------------
+*/
+
+
+#navmenu ul li a {
+/* NAV UP COLOR */	color: #fff;
+	background-image: url("images/style6/nav_sep.png") no-repeat right top;
+}
+
+#navmenu li a:hover,
+#navmenu li:hover a,
+#navmenu li.iehover a,
+/* enforce active styles */
+#navmenu li#current.iehover a,
+#navmenu li.active:hover a
+ {
+/* NAV OVER COLOR */color: #fff;
+	background-image: url("images/style6/nav_sep.png") no-repeat right top;
+	background-color: #690;
+}
+
+#navmenu li.active a,
+#navmenu li.active a:hover {
+/* NAV ACTIVE COLOR */	color: #fff;
+	background-image: url("images/style6/nav_sep.png") no-repeat right top;
+	background-color: #f90;
+}
+
+#navmenu li:hover li a,
+#navmenu li.iehover li a {
+/* SUBLEVEL NAV UP COLOR */	color: #fff;
+}
+
+
+#navmenu li:hover ul,
+#navmenu li:hover ul li,
+#navmenu li:hover ul li a,
+#navmenu li.iehover ul,
+#navmenu li.iehover ul li,
+#navmenu li.iehover ul li a
+ {
+/* SUBLEVEL NAV UP BG COLOR */background-color: #690;
+
+}
+
+#navmenu li:hover ul li:hover,
+#navmenu li:hover ul li a:hover,
+#navmenu li.iehover ul li:hover,
+#navmenu li.iehover ul li a:hover,
+/* enforce active styles */
+#navmenu li.active:hover ul li:hover,
+#navmenu li.active:hover ul li a:hover,
+#navmenu li#current.iehover ul li:hover,
+#navmenu li#current.iehover ul li a:hover
+{
+/* SUBLEVEL NAV OVER BG COLOR */	background-color: #83aa04;
+/* SUBLEVEL NAV OVER TEXT COLOR */	color: #fff;
+}
+
+
+#navmenu li li {
+/* SUBLEVEL SEPARATOR */	border-bottom: 1px solid #619300;
+}
+
+#navmenu li ul {
+	width: 173px;
+/* SUBLEVEL BLOCK OUTLINE */
+	border-right: 1px solid #619300;
+	border-left: 1px solid #619300;
+	border-top: none;
+}
+
+/* END TOPNAV CUSTOMIZATION */
+#navmenu li, #navmenu {background: url(images/style6/nav_bg.png) repeat-x 0 bottom;font-weight: bold;}
+#navmenu ul li:hover,#navmenu ul li.iehover {background: url(images/style6/nav_right_over.png) no-repeat right center;}
+#navmenu ul li:hover li a,#navmenu ul li.iehover li a {background-image: none;}
+#navmenu ul ul a {width: 170px;}
+#navmenu li li,#navmenu li.haschild ul li#current:hover,#navmenu li.haschild ul li#current.iehover {width: 173px;}
+#navmenu {background: url(images/style6/nav_bg.png) repeat-x center center;}
+#navmenu .leftbar {background: url(images/style6/leftbar.png) no-repeat left center;}
+#navmenu .rightbar {background: url(images/style6/rightbar.png) no-repeat right center;}
+#navmenu li a {background: url(images/style6/nav_sep.png) 100% 0 no-repeat;}
+
+/* @end */
+
+/* Module BG Images - Proceed with caution */
+div.module{background: url(images/style6/topright_bdr.png) 100% 0 no-repeat;}
+div.module div {background: url(images/style6/topleft_bdr.png) 0 0 no-repeat;}
+div.module div div  {background: url(images/style6/botright_bdr.png) 100% 100% no-repeat;}
+div.module div div div  {background: url(images/style6/botleft_bdr.png) 0 100% no-repeat;}
+div.modulelight {background: url(images/style6/topright_light.png) 100% 0 no-repeat;}
+div.modulelight div {background: url(images/style6/topleft_light.png) 0 0 no-repeat;}
+div.modulelight div div {background: url(images/style6/botright_light.png) 100% 100% no-repeat;}
+div.modulelight div div div {background: url(images/style6/botleft_light.png) 0 100% no-repeat;}
+div.modulemid {background: url(images/style6/topright_mid.png) 100% 0 no-repeat;}
+div.modulemid div{background: url(images/style6/topleft_mid.png) 0 0 no-repeat;}
+div.modulemid div div  {background: url(images/style6/botright_mid.png) 100% 100% no-repeat;}
+div.modulemid div div div  {background: url(images/style6/botleft_mid.png) 0 100% no-repeat;}
+
+.modulemid {background: url(images/style6/boxright_mid.png) top right no-repeat;}
+.modulemid div {background: url(images/style6/boxleft_mid.png) top left no-repeat;}
+.modulemid div div {background: url(images/style6/boxleft_mid.png) bottom left no-repeat;}
+.modulemid div div div {background: url(images/style6/boxright_mid.png) bottom right no-repeat;}
+.modulelight {background: url(images/style6/boxright_light.png) top right no-repeat;}
+.modulelight div {background: url(images/style6/boxleft_light.png) top left no-repeat;}
+.modulelight div div {background: url(images/style6/boxleft_light.png) bottom left no-repeat;}
+.modulelight div div div {background: url(images/style6/boxright_light.png) bottom right no-repeat;}
+p.p1 {background-image: url("images/style6/6_1.png");}
+p.p2 {background-image: url(images/style6/6_2.png);}
+p.p3 {background-image: url(images/style6/6_3.png);}
+p.p4 {background-image: url(images/style6/6_4.png);}
+p.p5 {background-image: url(images/style6/6_5.png);}
+p.p6 {background-image: url(images/style6/6_6.png);}
+p.p7 {background-image: url(images/style6/6_7.png);}
+p.p8 {background-image: url(images/style6/6_8.png);}
+p.p9 {background-image: url(images/style6/6_9.png);}
+p.p10 {background-image: url(images/style6/6_10.png);}

@@ -1,0 +1,232 @@
+/* © 2022 - inVisu inc. https://www.invisu.ca/ - Tous droits réservés */
+
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    overscroll-behavior: none;
+}
+
+a {
+    color: #ff0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#titre {
+    color: #333;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    /* -moz-user-select: none; */
+    /* -webkit-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* pointer-events: none; */
+    z-index: 2;
+}
+
+#message {
+    color: #370;
+    font-family: Helvetica;
+    font-size: 10px;
+    position: absolute;
+    /* border: 1px solid blue; */
+    top: 20px;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#moodle {
+    color: #370;
+    opacity: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 10px;
+    position: absolute;
+    top: 50px;
+    /* right: -100px; */
+    width: 80%;
+    box-sizing: border-box;
+    text-align: left;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#bouton {
+    color: #370;
+    font-family: Helvetica;
+    font-size: 8px;
+    position: absolute;
+    top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
+}
+
+#container {
+    position: absolute;
+    z-index: 1;
+}
+
+#attribution {
+    color: #666;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    text-align: left;
+    font-size: 10px;
+    line-height: 12px;
+    /* -moz-user-select: none; */
+    /* -webkit-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* pointer-events: none; */
+    z-index: 2;
+}
+
+a, button, input, select {
+    pointer-events: auto;
+}
+
+.lil-gui {
+    z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+@media all and ( max-width: 640px ) {
+    .lil-gui.root {
+	right: auto;
+	top: auto;
+	max-height: 50%;
+	max-width: 80%;
+	bottom: 0;
+	left: 0;
+    }
+}
+
+/* /\* Tooltip container *\/ */
+/* .tooltip { */
+/*   position: relative; */
+/*   display: inline-block; */
+/*   border-bottom: 1px dotted black; /\* If you want dots under the hoverable text *\/ */
+/* } */
+
+/* /\* Tooltip text *\/ */
+/* .tooltip .tooltiptext { */
+/*   visibility: hidden; */
+/*   width: 120px; */
+/*   background-color: black; */
+/*   color: #fff; */
+/*   text-align: center; */
+/*   padding: 5px 0; */
+/*   border-radius: 6px; */
+ 
+/*   /\* Position the tooltip text - see examples below! *\/ */
+/*   position: absolute; */
+/*   z-index: 4; */
+/* } */
+
+/* /\* Show the tooltip text when you mouse over the tooltip container *\/ */
+/* .tooltip:hover .tooltiptext { */
+/*   visibility: visible; */
+/* } */
+
+/* .tooltip .tooltiptext { */
+/*   top: -5px; */
+/*   right: 105%; */
+/* } */
+
+
+
+/* .hovertext { */
+/*   position: relative; */
+/*   border-bottom: 1px dotted black; */
+/* } */
+
+/* .hovertext:before { */
+/*   content: attr(data-hover); */
+/*   visibility: hidden; */
+/*   opacity: 0; */
+/*   width: 140px; */
+/*   background-color: black; */
+/*   color: #fff; */
+/*   text-align: center; */
+/*   border-radius: 5px; */
+/*   padding: 5px 0; */
+/*   transition: opacity 1s ease-in-out; */
+
+/*   position: absolute; */
+/*   z-index: 1; */
+/*   left: 0; */
+/*   top: 110%; */
+/* } */
+
+/* .hovertext:hover:before { */
+/*   opacity: 1; */
+/*   visibility: visible; */
+/* } */
+
+/* #overlay { */
+/*     position: absolute; */
+/*     font-size: 16px; */
+/*     z-index: 2; */
+/*     top: 0; */
+/*     left: 0; */
+/*     width: 100%; */
+/*     height: 100%; */
+/*     display: flex; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*     flex-direction: column; */
+/*     background: rgba(0,0,0,0.7); */
+/* } */
+
+/* #overlay button { */
+/*     background: transparent; */
+/*     border: 0; */
+/*     border: 1px solid rgb(255, 255, 255); */
+/*     border-radius: 4px; */
+/*     color: #ffffff; */
+/*     padding: 12px 18px; */
+/*     text-transform: uppercase; */
+/*     cursor: pointer; */
+/* } */
+
+/* #notSupported { */
+/*     width: 50%; */
+/*     margin: auto; */
+/*     background-color: #f00; */
+/*     margin-top: 20px; */
+/*     padding: 10px; */
+/* } */

@@ -1,0 +1,768 @@
+/* @group Global Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp, hr,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {background: none;border: 0;clear: both;display: block;float: none;font-size: 0;list-style: none;margin: 0;padding: 0;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+.clearfix:after {clear: both;content: '.';display: block;visibility: hidden;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+body.contentpane {background: #fff;}
+/* @end Reset */ 
+
+
+/* @group Typography Helper Styles */
+
+body {
+	font-size: 100%;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+
+/* Headings */
+
+
+.componentheading {
+	margin: 0px 0px 10px 4px;
+}
+
+table.blog table.contentpaneopen td.contentheading,td.contentheading {
+	width: 99%;
+}
+
+
+ul.latestnews,ul.latestnewsdark,ul.latestnewsred,ul.latestnewslight,ul.latestnewsmid,ul.latestnewsbdr,
+ul.mostread,ul.mostreaddark,ul.mostreadred,ul.mostreadlight,ul.mostreadmid,ul.mostreadbdr {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Lists */
+#content ol, #content ul {margin-left:40px;margin-bottom: 5px;}
+#content li ul {margin-left:20px;margin-bottom: 0px;}
+#content ul li {list-style-type: disc;}
+#content ul li li {list-style-type: circle;}
+/* Ordered Lists */
+#content ol {list-style-type: decimal;}
+#content ol ol {list-style-type: lower-alpha;}
+
+p {
+	margin: 1em 0;
+}
+
+pre {
+	display: block;
+	font: 11px "Courier New", Courier, monospace;
+	padding: 5px;
+	white-space: normal;
+}
+
+/* @end */
+
+
+#wrap-b {
+	position: relative;
+}
+
+#wrap {
+	height: 100%;
+	margin: 0;
+	position: relative;
+	padding: 0;
+}
+
+#wrap-inner {
+	text-align: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar {
+	height: 26px;
+	position: relative;
+	top: 1px;
+	margin: 0 1px;
+	font-size: 0px;
+	line-height: 0px;
+}
+#header {
+	width: 100%;
+}
+#user1 {
+	position: absolute;
+	top: 40px;
+	right: 15px;
+	text-align:left;
+}
+#user1 h3 {line-height:100%;margin:0;padding:0;}
+
+#main-body {
+	clear: both;
+	float: left;
+	width: 80%;
+	position: relative;
+	z-index: 100;
+	padding-bottom: 10px;
+}
+
+#content {
+	float: right;
+	/* width: 75%; */
+}
+
+#sidebar {
+	float: left;
+	width: 23.5%;
+	margin-right: -3px;
+	overflow: hidden;
+}
+
+#sidebar-2 {
+	float: right;
+	width: 19.25%;
+	position: relative;
+	margin-left: -3px;
+	overflow: hidden;
+}
+
+#sidebar .inside {
+	padding: 10px 4px 10px 10px;
+}
+
+#sidebar-2 .inside {
+	padding: 10px 10px 10px 4px;
+}
+
+#content .inside {
+	padding: 10px 4px;
+}
+
+
+.clear {
+	clear: both;
+	height: 10px !important;
+	height: 0;
+}
+
+
+/*-----SPECIAL LIST STYLE (CHANGE OR ADD ANOTHER)-----*/
+
+#content ul.checklist,
+#sidebar ul.checklist,
+#sidebar-2 ul.checklist {
+	list-style: none;
+}
+
+#content ul.checklist li,
+#sidebar ul.checklist li,
+#sidebar-2 ul.checklist li {
+	list-style: none;
+	line-height: 16px;
+	padding: 2px 0px 2px 18px;
+	background: url(tick.png) no-repeat left center;
+	list-style-position: outside;
+}
+
+#content ul.checklist a,
+#sidebar ul.checklist a,
+#sidebar-2 ul.checklist a {
+	text-decoration: underline;
+	padding: 1px;
+}
+
+#content ul.checklist a:hover,
+#sidebar ul.checklist a:hover,
+#sidebar-2 ul.checklist a:hover {
+	text-decoration: none;
+	padding: 1px;
+}
+
+
+
+
+p.info {
+    background: #F8FAFC url(info.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #B5D4FE;
+    border-bottom: 2px solid #B5D4FE;
+}
+
+p.warn {
+    background: #FFF7C0 url(warn.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #F7D229;
+    border-bottom: 2px solid #F7D229;
+}
+
+p.alert {
+    background: #FBEEF1 url(exc.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #FEABB9;
+    border-bottom: 2px solid #FEABB9;
+}
+
+span.arrow {
+	background: url(list-arrow.png) no-repeat 0 2px;
+	padding-left: 14px;
+}
+
+
+p.p1,p.p2,p.p3,p.p4,p.p5,p.p6,p.p7,p.p8,p.p9,p.p10 {
+	padding-left: 52px;
+    background-repeat:no-repeat;
+    background-position:  0 0;
+    min-height: 52px;
+    height:auto !important;
+    height:52px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+ line-height: 125%;
+}
+
+/* @group Modules */
+
+
+
+
+/* user3 Background Color */
+
+#headerleader .module-gradient {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#headerleader .module,
+#headerleader .modulelight,
+#headerleader .moduledark,
+#headerleader .modulered,
+#headerleader .modulemid,
+#headerleader .modulebdr {
+	margin: 8px;
+}
+
+
+.user4split2,.user6split2 {
+	float: left;
+	overflow: hidden;
+	width: 49%;
+}
+
+.user5split2,.user7split2 {
+	float: right;
+	overflow: hidden;
+	width: 49%;
+}
+
+
+.user6,.user7,.user6split2,.user7split2 {
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+
+#headerleader .module,#headerleader .module div {
+	margin: 0;
+	padding: 0;
+}
+
+/* LIGHT */
+
+div.modulelight
+{
+	margin-bottom: 10px;
+	height: 1%;
+}
+div.modulelight div div div  {
+	padding: 12px 15px 15px 15px;
+}
+div.modulelight div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.modulelight h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+
+/* MID */
+
+div.modulemid
+{
+	margin-bottom: 10px;
+	height: 1%;
+}
+div.modulemid div div div  {
+	padding: 12px 15px 15px 15px;
+}
+div.modulemid div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.modulemid h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+/* BDR */
+
+div.module,div.modulebdr
+{
+	margin-bottom: 10px;
+	height: 1%;
+}
+
+
+div.module div div div, div.modulebdr div div div  {
+	padding: 12px 15px 15px 15px;
+}
+div.module div div div div, div.modulebdr div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.module h3, div.modulebdr h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+/* Main Menu Side Modules */
+
+#sidebar ul.menu ul,#sidebar-2 ul.menu ul {
+	margin-left: 10px;
+}
+
+#sidebar ul.menu li a,#sidebar-2 ul.menu li a {
+	line-height: 150%;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+/* @end Modules */
+
+
+.user4 p,.user5 p,.user6 p,user7 p,.user4split2 p,.user5split2 p,.user6split2 p,.user7split2 p,.modulebdr p {
+	margin: 0;
+	padding: 0;
+}
+
+#informations {
+        color: #000;
+	font-size: 95%;
+	line-height: 110%;
+	text-align: left;
+	position: relative;
+	clear: both;
+}
+
+#footer {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 11px;
+	line-height: 12px;
+	position: relative;
+	clear: both;
+	margin: 1px;
+}
+
+.access {
+	width: auto;
+	position: absolute;
+	right: 5px;
+	top: 12px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+#access_buttons {
+	height: 21px;
+	width: 113px;
+	white-space: nowrap;
+	position: relative;
+}
+
+#access_buttons a {
+	width: 21px;
+	height: 21px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.designer a {
+	cursor: pointer;
+	text-indent: -5000em;
+	display:block;
+	float: left;
+	width: 75px;
+	height: 12px;
+	background: url(jscright.png) no-repeat left top;
+	margin-top: 4px;
+}
+
+/* @group Menu Column Styles */
+
+div.module_menu,div.module_menu div,div.module_menu div div,div.module_menu div div div {
+	padding: 0px;
+	margin: 0px;
+}
+div.module_menu {
+	margin-bottom: 10px;
+	padding: 4px;
+}
+div.module_menu h3 {
+	font-size: 16px;
+	padding: 5px 0px 5px 5px;
+	margin: 
+	0px;
+}
+
+ul.menu_menu li {
+	list-style: none;
+	background-image: none;
+	text-indent: 6px;
+}
+ul.menu_menu li li {
+	list-style-type: none;
+}
+ul.menu_menu li a {
+	padding:0px;
+	margin: 0px;
+	text-decoration: none;
+	display: block;
+	background-color: #fff;
+	line-height: 200%;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+ul.menu_menu li li a {
+	text-decoration: none;
+	display: block;
+	border: none;
+	line-height: 110%;
+	padding: 4px 0px;
+	font-size: 11px;
+}
+
+/* @end */
+
+
+/* @group Joomla Specific Styles */
+
+table.contentpaneopen td.buttonheading,
+table.blog table.contentpaneopen td.buttonheading {
+	padding: 0px;
+	margin: 0;
+}
+
+div.mosimage {
+	margin: 5px;
+}
+
+.pagenav {
+	padding: 3px 5px 3px 3px;
+}
+
+table.contenttoc {
+	margin: 5px;
+	padding: 1px;
+	float: right;
+}
+table.contenttoc th {
+	padding: 2px 10px;
+}
+table.contenttoc td {
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: left;
+	padding: 2px 0px 2px 4px;
+}
+table.contenttoc a {
+	text-decoration: none;
+	line-height: 1em;
+}
+table.contentpaneopen {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+table.blog table.contentpaneopen td {
+	padding: 0px 4px;
+}
+
+/*Header for table content*/
+
+td.sectiontableheader {
+	font-weight: bold;
+	padding: 4px;
+}
+
+/*Alternating table rows*/
+
+tr.sectiontableentry1 td,td.sectiontableentry1 {
+	padding: 6px;
+}
+
+tr.sectiontableentry2 td ,td.sectiontableentry2 {
+	padding: 6px;
+}
+/* Article Overflow */
+
+
+div.blog_more strong {
+	position: relative;
+}
+#content div.blog_more ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#content div.blog_more ul li {
+	list-style: none;
+	background-image: none;
+	padding: 0px;
+	margin: 0px;
+}
+div.blog_more ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+}
+div.blog_more ul li a:hover {
+	text-decoration: none;
+}
+
+
+/* @end */
+
+
+
+
+/* @group NAVBAR */
+
+#navmenu {
+	height: 34px;
+	margin: 4px 5px 10px 5px;
+	position: relative;
+	z-index: 10000;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#navmenu .leftbar {
+	float: left;
+	width: 6px;
+	height: 34px;
+}
+
+#navmenu .rightbar {
+	float: right;
+	width: 6px;
+	height: 34px;
+}
+
+#navmenu ul, #navbar ul li {
+	float: left;
+}
+
+#navmenu ul {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0px;
+}
+
+#navmenu ul li {
+	position: relative;
+	margin: 0;
+}
+
+/*PARENT MENU*/
+
+#navmenu a {
+	float: left;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	height: 34px;
+	line-height: 34px;
+	padding: 0px 16px 0px 14px;
+}
+
+/*PARENT MENU ITEM HOVER*/
+
+#navmenu li a:hover {
+	height: 34px;
+}
+
+/*ALL LISTS*/
+
+#navmenu li {
+	float: left;
+	padding: 0;
+	background: none;
+}
+
+#navmenu ul ul a {
+	background: none;
+}
+
+/*SUBLEVEL STYLES*/
+
+/*SUBLEVEL TEXT STYLES*/
+
+#navmenu li li a {
+	font-weight: normal;
+	padding: 0;
+	height: 26px;
+	line-height: 26px;
+	text-indent: 5px;
+}
+
+#navmenu ul ul a {
+	display: block;
+	text-decoration: none;
+	width: 173px;
+	text-transform: none;
+}
+
+#navmenu li li {
+	padding: 0;
+	background: none;
+/*DONT SHOW THE BACKGROUND IMAGE*/
+}
+
+/*SUBLEVEL POSITIONING*/
+
+#navmenu li li {
+	float: left;
+	padding: 0;
+	width: 173px;
+}
+
+#navmenu li ul ul {
+	margin: -34px 0 0 173px;
+}
+
+#navmenu li:hover, #navmenu li.iehover {
+	left: 0;
+}
+
+/*SUBLEVEL HOVER STYLES*/
+
+#navmenu ul ul a:hover {
+	background: none;
+	height: 26px;
+	line-height: 26px;
+	padding: 0;
+	margin: 0;
+}
+
+
+#navmenu li ul {
+	top: 34px;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 173px;
+	font-weight: normal;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+}
+
+
+/* NO SUBLEVEL ACTIVE STYLES */
+
+#navmenu ul li.active ul li a,
+#navmenu ul li.active ul li,
+#navmenu ul li.active ul li a:hover,
+#navmenu ul li.active ul li.hover {
+	background-image: none;
+	background-color: transparent;
+}
+
+/*SUBLEVEL PARENT INDICATORS*/
+
+#navmenu ul li.haschild ul li a.child,
+#navmenu ul li.haschild ul li a.child:hover {
+	background: url(arrow_right.gif) 164px 8px no-repeat;
+}
+
+#navmenu ul li.active ul li a.child,
+#navmenu ul li.active ul li a.child:hover {
+	background: url(arrow_right.gif) 164px 8px no-repeat;
+}
+
+#navmenu ul li ul li a:hover {
+	background-image: none;
+}
+
+/* HIDE OTHER LISTS FROM IE */
+
+#navmenu li:hover ul ul, 
+#navmenu li:hover ul ul ul,
+#navmenu li:hover ul ul ul ul,  
+#navmenu li.iehover ul ul, 
+#navmenu li.iehover ul ul ul, 
+#navmenu li.iehover ul ul ul ul {
+	left: -999em;
+}
+
+#navmenu li:hover ul, 
+#navmenu li li:hover ul, 
+#navmenu li li li:hover ul, 
+#navmenu li li li li:hover ul,
+#navmenu li.iehover ul, 
+#navmenu li li.iehover ul, 
+#navmenu li li li.iehover ul,
+#navmenu li li li li.iehover ul {
+	z-index: 100;
+	left:auto;
+}
+
+/* Chronoform */
+div.chronoform a:hover,
+div.chronoform a,
+div.chronoform a:active{
+   color: #fff;
+   text-decoration: none;
+}
+
+
+/* @end */
